@@ -1,22 +1,17 @@
-import React from 'react'
+import { socialLinks } from '../data'
 
-function SocialLink() {
+function SocialLink () {
   return (
     <ul className="icon-list">
-        <li className="icon-item">
-            <a href="http://facebook.com">
-              <i className="fa-brands fa-facebook"></i></a>
-        </li>
-        <li className="icon-item">
-            <a href="#">
-                <i className="fa-brands fa-instagram"></i></a>
-        </li>
-        <li className="icon-item">
-            <a href="#">
-                <i className="fa-brands fa-threads"></i></a>
-        </li>
-    </ul>
-  )
-}
+        {socialLinks.map((link) => (
+          <li className="icon-item" key={link.id}>
+          <a href={link.href}>
+              <i className={link.icon}></i>
+          </a>
+          </li>
+        ))}
+   </ul>
+  );
+};
 
-export default SocialLink
+export default SocialLink;
