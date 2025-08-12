@@ -215,7 +215,7 @@ span {
 }
 
 .hero {
-    background: url(../img/content.jpg) center/cover no-repeat;
+    background: url(assets/content.jpg) center/cover no-repeat;
     color: var(--primary-white);
     position:relative;
     text-align: center;
