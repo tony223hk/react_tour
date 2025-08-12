@@ -17,8 +17,3 @@ const Tours = () => {
   };
 
 export default Tours
-    </article>
-  )
-}
-
-export default Tours
